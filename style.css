@@ -71,5 +71,7 @@ p {
 }
 
 #drop1 {
-    visibility: hidden;
+    opacity: 0;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
