@@ -1,4 +1,4 @@
-const gifAmnt = 4
+const gifAmnt = 5
 const dropButton = document.getElementById("dropButton")
 const drop2Button = document.getElementById("secondDropButton")
 const bg = document.getElementById("bg")
