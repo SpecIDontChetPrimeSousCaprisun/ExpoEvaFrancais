@@ -7,6 +7,8 @@
     from {
 	border-width: 0px;
 	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0);
@@ -16,10 +18,12 @@
     to {
 	border-width: 5px;
 	width: 80%;
-	height: 80%;
+	height: auto;
 	background-color: rgba(0, 0, 0, 0.75);
 	padding: 5%;
 	color: red;
+	margin-top: 50px;
+	margin-bottom: 50px;
     }
 }
 
@@ -43,17 +47,20 @@ p {
 
 #content {
     position: absolute;
-    top: 50%;
     left: 50%;
     width: 100%;
     height: 100%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     border-width: 0;
     border-style: solid;
     border-color: red;
     animation-duration: 5s;
     animation-fill-mode: forwards;
     color: black;
+}
+
+#bottomSpacer {
+    height: 50px;
 }
 
 #dropButton {
@@ -64,14 +71,14 @@ p {
 
 #bg {
     opacity: 0;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     width: 100%;
     height: 100%;
     object-fit: cover;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50vh);
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
